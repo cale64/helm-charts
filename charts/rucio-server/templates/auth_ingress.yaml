@@ -2,7 +2,7 @@
 {{- if .Values.authIngress.enabled -}}
 {{- $fullName := include "rucio.fullname" . -}}
 {{- $ingressPath := .Values.authIngress.path -}}
-apiVersion: extensions/v1beta1
+apiVersion: extensions/v1
 kind: Ingress
 metadata:
   name: {{ $fullName }}-auth
